@@ -1,4 +1,3 @@
-
 // // Values & Data
 // // console.log(23 - 14 + 16 + 234 - 26)
 
@@ -119,7 +118,7 @@ for (let i = 1; i<5; i++){
 console.log('Go');
 
 // While loop
-let i = 1;
+//let i = 1;
 while (i<5){
   console.log(i);
   i = i+1;
@@ -175,3 +174,30 @@ while (i<=5){
   i=i+1
 }
 console.log('Counting completed!')
+
+var petDog = 'Pepper';
+var petCat = 'Rex';
+var dogSound = 'woof'
+var catSound = 'meeeeee'
+
+console.log(petDog, "says", dogSound);
+
+console.log(petCat, "says", catSound);
+
+catSound = 'meow';
+
+console.log(petCat, 'now says', catSound);
+
+//functions
+
+function letterFinder(word, match) {
+  for (i = 0; i < word.length; i++) {
+    if(word[i] == match) {
+      console.log('Found the', match, 'at', i)
+    } else {
+      console.log('--- No match found at', i)
+    }
+  }
+}
+
+letterFinder("test", "t")
