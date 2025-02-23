@@ -39,7 +39,7 @@ friends.push('Haruna');
 friends.push('Dauda', 'Shuaibu');// we can add as many as we can
 console.log(friends);
 
-//umshift() method is used to add element at the beginning if the array 
+//unshift() method is used to add element at the beginning if the array 
 
 friends.unshift('Murtala', 'Shafiu');
 console.log(friends);
