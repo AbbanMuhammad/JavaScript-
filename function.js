@@ -60,3 +60,34 @@ function loginUser(user){
   return `The user ${user.name} with the id of ${user.id} is logged in.`;
   
 }
+
+leave off () with this
+const double = a => a * 20;
+
+console.log(double(3));
+
+// return an object 
+const createObj = () => ({
+  name: 'Sani',
+});
+
+console.log(createObj());
+
+//arror function 
+const numbers = [1,2,3,4,5];
+
+numbers.forEach(function (n){
+  console.log(n);
+});
+
+//Arrow function in a callback
+
+numbers.forEach(n => console.log(n));
+
+//IIFE Immediately invoked function 
+/*(function () {
+  const user = ,'Umar';
+  console.log(user);
+})();*/
+
+
