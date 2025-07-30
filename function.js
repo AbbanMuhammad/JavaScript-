@@ -108,6 +108,74 @@ function add(){
   console.log(x + y);
 }
 
+add();
+//console.log(y); //it's a function scope.
+
+
+//Blocked Scope: is a variable declared with let or const inside a function or in the if statement.
+
+if(true){
+  let a = 50;
+  const b = 100;
+  var c = 150;
+}
+
+//console.log(a);// block scoped 
+//console.log(b); // block scoped 
+console.log(c);
+
+// function scoped 
+
+function runs(){
+  var d = 200;
+  console.log(d);
+}
+
+/*console.log(d); var is a function scoped,it cannot be access outside the function.*/
+
+
+//Nested Scope
+
+function first(){
+  const x = 100;
+
+  function second(){
+    const y = 200;
+    console.log(x + y);
+  }
+  second();
+}
+
+first();
+
+//function Declaration VS Expression 
+
+function addDollar(value){
+  return '$' + value;
+}
+
+//Function declaration 
+console.log(addDollar(1000));
+
+function addPlusSign(value){
+  return '+' + value;
+};
+//function expression 
+console.log(addPlusSign(2000));
+
+
+//Arror functions
+
+const addition = (a, b) => {
+  return a + b;
+};
+
+console.log(addition(2,4));
+//implicit return 
+const subtraction = (a, b) => a - b;
+
+console.log(subtraction(45, 12));
+
 //if it has one parameter. leave off () with this
 const double = a => a * 20;
 
