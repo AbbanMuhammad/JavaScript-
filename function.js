@@ -61,6 +61,53 @@ function loginUser(user){
   
 }
 
+const user ={
+  name: 'Sani Ismail',
+  id: 002,
+};
+
+console.log(loginUser(user));
+console.log(loginUser({
+  name: 'Usman Yufuf',
+  id: 1,
+}))
+
+//arrays as parameters 
+function getRandom(...arr){
+  const randomIndex = Math.floor(Math.random() * arr.length);
+  const item = arr[randomIndex];
+
+  console.log(item);
+}
+
+getRandom(1,2,3,4,5,6,7,8,9,10);
+
+
+//Scope: Global which can be accessible anywhere. Example 
+
+const x = 100;
+
+console.log(x, 'in global');
+
+function run(){
+    //console.log(window.immerHeight);
+  console.log(x, 'in function');
+}
+
+run();
+
+if(true){
+  console.log(x, 'in a block');
+  
+}
+
+//function scope is a variable declared inside the function:
+function add(){
+  const x = 1 // This will overwrite the globally scoped x value which is called 'VARIABLE SHADOWING'
+  const y = 50; //function scope, it cannot be access outside the function.
+  console.log(x + y);
+}
+
 //if it has one parameter. leave off () with this
 const double = a => a * 20;
 
