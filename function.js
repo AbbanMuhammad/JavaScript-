@@ -61,7 +61,7 @@ function loginUser(user){
   
 }
 
-leave off () with this
+//if it has one parameter. leave off () with this
 const double = a => a * 20;
 
 console.log(double(3));
